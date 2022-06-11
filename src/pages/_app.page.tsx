@@ -6,7 +6,7 @@ if (typeof window !== 'undefined') {
   smoothscroll.polyfill();
 }
 
-import '../styles/globals.css';
+import '../../styles/globals.css';
 import { appWithTranslation } from 'next-i18next';
 import App from 'next/app';
 import Head from 'next/head';
@@ -14,8 +14,8 @@ import { Toaster } from 'react-hot-toast';
 import smoothscroll from 'smoothscroll-polyfill';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
-import GlobalStyle from '../GlobalStyle';
-import theme from '../themes';
+import GlobalStyle from '../../GlobalStyle';
+import theme from '../../themes';
 
 const CustomApp = ({ Component, pageProps }) => {
   return (
