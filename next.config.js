@@ -3,7 +3,7 @@
 const { i18n } = require('./next-i18next.config');
 
 module.exports = {
-  webpack(config, options) {
+  webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
@@ -11,7 +11,7 @@ module.exports = {
     return config;
   },
   swcMinify: true,
-  pageExtensions: ['page.jsx', 'api.js'],
+  pageExtensions: ['page.jsx', 'api.js', 'page.tsx', 'api.ts'],
   generateEtags: true,
   reactStrictMode: true,
   trailingSlash: false,
@@ -25,8 +25,6 @@ module.exports = {
     domains: [
       'picsum.photos',
       'cdn.fakercloud.com',
-      'corretto-dev.s3.ap-northeast-2.amazonaws.com',
-      'd191oe2ij3fvb3.cloudfront.net',
       'localhost:3000',
       '192.168.0.63:3000',
     ],
@@ -36,14 +34,8 @@ module.exports = {
   // Will be available on both server and client
   publicRuntimeConfig: {
     mode: process.env.MODE,
-    apiHost: process.env.API_HOST,
-    apiVersion: process.env.API_VERSION,
-    s3Host: process.env.S3_HOST,
-    kakaoApiKey: process.env.KAKAO_API_KEY,
-    // clientVersion: process.env.CLIENT_VERSION,
-    // siteVerification: {
-    //   naver: process.env.SITE_VERIFICATION_NAVER,
-    // },
-    // googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
+    apiHostDev: process.env.API_HOST_DEVELOP,
+    apiHostPro: process.env.API_HOST_PRODUCT,
+    apiHostRel: process.env.API_HOST_RELEASE,
   },
 };
