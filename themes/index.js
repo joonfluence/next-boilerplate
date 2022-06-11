@@ -1,7 +1,3 @@
-/**
- * @copyright Copyright © 2018-2019 Corretto, Inc. All rights reserved.
- */
-
 import colors from './colors';
 import placeholder from './utils/placeholder';
 import zIndex from './zIndex';

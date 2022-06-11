@@ -1,7 +1,3 @@
-/**
- * @copyright Copyright © 2018-2019 Corretto, Inc. All rights reserved.
- */
-
 import { normalize } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 
@@ -41,7 +37,6 @@ const Component = createGlobalStyle`
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
     /* font-family: 'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace; */
     font-size: 14px;
-    color: ${({ theme }) => theme.colors.neutral[800]};
     /* -webkit-font-smoothing: antialiased; */
     /* -moz-osx-font-smoothing: grayscale; */
   }

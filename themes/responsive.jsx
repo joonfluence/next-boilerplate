@@ -1,7 +1,3 @@
-/**
- * @copyright Copyright 2020 Corretto, Inc. All rights reserved.
- */
-
 const deviceSize = {
   xs: 576,
   sm: 768,

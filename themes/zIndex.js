@@ -1,7 +1,3 @@
-/**
- * @copyright Copyright 2020 Corretto, Inc. All rights reserved.
- */
-
 const zIndex = {
   toast: 6000,
   modal: 5000,

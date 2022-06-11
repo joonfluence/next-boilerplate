@@ -1,7 +1,3 @@
-/**
- * @copyright Copyright 2018 Corretto, Inc. All rights reserved.
- */
-
 import { css } from 'styled-components';
 
 const placeholder = (color) => {

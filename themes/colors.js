@@ -1,7 +1,3 @@
-/**
- * @copyright Copyright © 2022 Corretto, Inc. All rights reserved.
- */
-
 // Neutral
 export const neutral = {
   0: '#FFFFFF',
